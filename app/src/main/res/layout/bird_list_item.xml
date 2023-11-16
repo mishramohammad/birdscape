@@ -1,0 +1,78 @@
+<!-- bird_list_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:layout_marginTop="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/birdNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/sciNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/locNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/obsDtTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/howManyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/latTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/lngTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingBottom="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

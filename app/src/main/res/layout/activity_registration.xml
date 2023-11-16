@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/birdheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/title"
+        android:src="@drawable/birdheading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/newtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birdheading"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newtitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/etSEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/text_border"
+        android:ems="25"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/password"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSEmailAddress"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/etSPassword"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/text_border"
+        android:ems="25"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/passwordagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/enter_password_again"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/etSConfPassword"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/text_border"
+        android:ems="25"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordagain"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/btnSSigned"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSConfPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/tvRedirectLogin"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/sign_up_with_SIGNUP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSSigned"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

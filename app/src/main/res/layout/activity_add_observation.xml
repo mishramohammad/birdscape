@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".observation.AddObservationActivity">
+
+    <EditText
+        android:id="@+id/etBirdName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bird Name"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etBirdSpecies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bird Species"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBirdName" />
+
+    <EditText
+        android:id="@+id/etBirdDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bird Description"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBirdSpecies" />
+
+    <EditText
+        android:id="@+id/etLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBirdDescription" />
+
+    <EditText
+        android:id="@+id/etLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLongitude" />
+
+    <EditText
+        android:id="@+id/etImageUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Image URL"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitude" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etImageUrl"
+        app:layout_constraintDimensionRatio="1:1" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Observation"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:onClick="navigateToMainActivity" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

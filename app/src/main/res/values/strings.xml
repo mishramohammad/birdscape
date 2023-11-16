@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">BIRDSCAPE.OPSC7312.POE</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoia2luZ2pvcmRhbjIwMDAiLCJhIjoiY2xud2JyMzl5MDkyNzJrb2EwYXY3M2RiMSJ9.2nkt4SgnkNNz7YmdL8wsYg</string>
+
+    <!-- Placeholder text for bird name, species, and description -->
+    <string name="placeholder_bird_name">Bird Name</string>
+    <string name="placeholder_bird_species">Bird Species</string>
+    <string name="placeholder_bird_description">Bird Description</string>
+
+    <!-- Content description for the bird image -->
+    <string name="bird_image">Bird Image</string>
+
+    <string name="outdoorView">Outdoor View</string>
+    <string name="trafficView">Traffic View</string>
+    <string name="streetView">Street View</string>
+    <string name="satelliteView">Satellite View</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="homeview">Home View</string>
+
+    <string name="logo_description">Explore.Discover.Soar</string>
+    <string name="welcome_to">WELCOME TO</string>
+    <string name="birdscape">BIRDSCAPE</string>
+    <string name="explore_discover_soar">Explore.Discover.Soar</string>
+    <string name="get_started">Get Started</string>
+    <string name="icon">icon</string>
+    <string name="b_rdscape">B RDSCAPE</string>
+    <string name="todo">TODO</string>
+    <string name="new_to_birdscape_register_now">New to Birdscape? Register Now</string>
+    <string name="email">Email</string>
+    <string name="title">title</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="enter_password_again">Enter Password again</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_with_SIGNUP">Have an account? Sign Up</string>
+    <string name="welcome">Welcome</string>
+    <string name="todo1">TODO</string>
+    <string name="bird_of_the_day">Bird of the Day</string>
+    <string name="they_re_only_a_few_inches_long_but_hummingbirds_flap_their_wings_so_fast_they_create_an_actual_humming_sound_that_gives_them_their_name">They\'re only a few inches long, but hummingbirds flap their wings so fast they create an actual humming sound that gives them their name.</string>
+    <string name="view_bird">VIEW BIRD</string>
+    <string name="locate_birds">Locate Birds</string>
+    <string name="bird_feeding">Knowledge</string>
+    <string name="explore">Explore</string>
+    <string name="view_bird2">View Bird</string>
+    <string name="explore2">EXPLORE</string>
+    <string name="hot_spots">Hot Spots</string>
+    <string name="near_me">NEAR ME</string>
+    <string name="view_all">VIEW ALL</string>
+    <string name="near_me_label">NEAR ME</string>
+    <string name="save_location">SAVE LOCATION</string>
+    <string name="birdfeeding">BIRDFEEDING</string>
+    <string name="todo4">TODO</string>
+    <string name="birdfeeding_tip">Birdfeeding Tip</string>
+    <string name="use_quality_bird_food_offer_a_mix_of_seeds_suet_nectar_and_fruit_that_suit_the_birds_in_your_region_research_the_preferences_of_local_species">Use Quality Bird Food: Offer a mix of seeds, suet, nectar, and fruit that suit the birds in your region. Research the preferences of local species.</string>
+    <string name="sentences">No Bread or Junk Food: Avoid feeding birds bread, cookies, or other junk food as it lacks nutritional value and can harm birds\' health.</string>
+    <string name="safety_considerations">Safety Considerations</string>
+    <string name="enable_night_mode">Enable night mode</string>
+    <string name="profile">PROFILE</string>
+    <string name="badges">BADGES</string>
+    <string name="settings">SETTINGS</string>
+    <string name="km_miles">KM/MILES</string>
+    <string name="b_rdscape1">B RDSCAPE</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="save">Save</string>
+    <string name="imperial_miles">Imperial (Miles)</string>
+    <string name="metric_km">Metric (KM)</string>
+    <string name="km_miles1">KM/Miles</string>
+    <string name="maximum_distance_to_hotspot">Maximum distance to hotspot</string>
+
+   <!-- weather Response-->
+    <string name="city_name">City Name</string>
+    <string name="send_request">Send Request</string>
+    <string name="loading">Loading…</string>
+
+</resources>

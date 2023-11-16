@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126949558538",
+    "project_id": "opsc7312-birdscape",
+    "storage_bucket": "opsc7312-birdscape.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126949558538:android:a27c07fc68016ad84752f3",
+        "android_client_info": {
+          "package_name": "com.green.birdscapeopsc7312poe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUVnhwj7IlCH0CTuLi3geTpo2yAiRCsYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126949558538:android:06bc9019db015fbf4752f3",
+        "android_client_info": {
+          "package_name": "com.green.opsc7312_birdscape"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUVnhwj7IlCH0CTuLi3geTpo2yAiRCsYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

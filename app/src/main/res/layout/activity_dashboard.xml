@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".DashboardActivity">
+
+    <!-- Welcome TextView -->
+    <TextView
+        android:id="@+id/welcometxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bird Image and Info -->
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rect4"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcometxt" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/birdImageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bird"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        app:layout_constraintTop_toTopOf="@+id/ImageView1"
+        app:layout_constraintStart_toStartOf="@+id/ImageView1"
+        app:layout_constraintEnd_toStartOf="@+id/birdtext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"/>
+
+    <TextView
+        android:id="@+id/birdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/bird_of_the_day"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/birdImageView"
+        app:layout_constraintTop_toTopOf="@+id/ImageView1"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/birdNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Hummingbird"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/birdImageView"
+        app:layout_constraintTop_toBottomOf="@+id/birdtext"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/birdDescriptionTextView"
+        android:layout_width="150dp"
+        android:layout_height="96dp"
+        android:text="@string/they_re_only_a_few_inches_long_but_hummingbirds_flap_their_wings_so_fast_they_create_an_actual_humming_sound_that_gives_them_their_name"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/birdImageView"
+        app:layout_constraintTop_toBottomOf="@+id/birdNameTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnLocateBirds"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/green2"
+        android:text="@string/locate_birds"
+        android:textColor="#4E342E"
+        app:layout_constraintEnd_toStartOf="@+id/btnBirdFeeding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birdDescriptionTextView" />
+
+    <Button
+        android:id="@+id/btnBirdFeeding"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/bird_feeding"
+        android:textColor="#212121"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnLocateBirds"
+        app:layout_constraintTop_toBottomOf="@+id/birdDescriptionTextView" />
+
+    <Button
+        android:id="@+id/btnObservations"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Observation"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnExplore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLocateBirds" />
+
+    <Button
+        android:id="@+id/btnExplore"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/explore"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnObservations"
+        app:layout_constraintTop_toBottomOf="@+id/btnBirdFeeding" />
+
+    <!-- "Logout" Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:text="Logout"
+        android:drawableStart="@drawable/logout_icon"
+        android:drawablePadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExplore"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

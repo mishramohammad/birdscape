@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/welcome_sticker"
+        android:layout_width="418dp"
+        android:layout_height="351dp"
+        android:src="@drawable/welcome"
+        android:contentDescription="@string/todo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/welcome_to"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/welcome_sticker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="196dp"
+        android:layout_height="42dp"
+        android:fontFamily="sans-serif-black"
+        android:text="   BIRDCSAPE"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="29dp"
+        android:layout_height="37dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/icon"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintStart_toEndOf="@id/title" />
+
+    <TextView
+        android:id="@+id/explore"
+        android:layout_width="166dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/explore_discover_soar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/get_started"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/explore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
